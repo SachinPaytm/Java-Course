@@ -1,0 +1,11 @@
+we can use lambda expression for a functional interface(where we have only one abstract method)
+for example we have an anonymous class.
+new Thread(new Runnable(){
+    public void run(){System.out.println("Thread Created");}
+}).start();
+
+now we can convert in into lambda expression such as
+
+new Thread(
+    ()-> {System.out.println("Thread created");}
+).start();
